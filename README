@@ -1,0 +1,84 @@
+
+      This is the program Viscometric-ViscoPlastic-Flow (VVPF) version 2.0.
+
+      Copyright (C) 2002, 2006 Dr. Jon E. Wallevik (jon.wallevik@ntnu.no),
+      The Norwegian University of Science and Technology (NTNU).
+
+ ---------------------------------------------------------------------------------
+
+ Non-Newtonian flow (CFD) inside a coaxial cylinders viscometer (rheometer) using
+ the PFI-theory.
+
+ In this work, a new material model is presented to simulate rheological behavior
+ of cement paste. This material model is among others based on combined concepts
+ by Hattori and Izumi and by Tattersall and Banfill. More precisely, coagulation,
+ dispersion and re–coagulation of the cement particles (giving a true thixotropic
+ behavior) in combination with the breaking of certain chemically formed linkages
+ between the particles (giving a so-called structural breakdown behavior) are
+ assumed to play an important role in generating the overall time-dependent
+ behavior of the cement paste. The model evaluation is done by comparing
+ experimental data with model prediction.
+
+ Reference:
+ Jon Elvar Wallevik, Rheological properties of cement paste: thixotropic
+ behavior and structural breakdown, Cement and Concrete Research, 39 (2009) 14-29.
+
+ ---------------------------------------------------------------------------------
+
+ Viscometric-ViscoPlastic-Flow is write in Fortran 90 [ANSI X3.198-1992; 
+ ISO/IEC 1539-1:1991 (E)]. This software is a free and can be redistributed and/or
+ modified under the terms of the GNU General Public License as published by the 
+ Free Software Foundation; either version 2 of the License, or (at the users 
+ option) any later version (see copying.txt).
+
+ ---------------------------------------------------------------------------------
+
+ The files that make up the software VVPF 2.0 are 
+
+ (1) main.f90
+ (2) param.f90
+ (3) motion.f90
+ (4) viscous.f90
+ (5) write2f.f90
+ (6) shear.f90
+ (7) update.f90
+
+ See the top part of each corresponding source code about its purpose.
+
+ ---------------------------------------------------------------------------------
+
+ No official documentation exist for this version (at the time of writing). 
+ However, algorithms and other features of this program are well documented for
+ the older version 1.0, which is in the following Ph.D.-thesis (Chapters 7,8 and
+ 9; Appendix A):
+ 
+ Wallevik, J. E. (2003); Rheology of Particle Suspensions - Fresh Concrete, Mortar
+ and Cement Paste with Various Types of Lignosulfonates (Ph.D.-thesis); Department
+ of Structural Engineering, The Norwegian University of Science and Technology,
+ ISBN 82-471-5566-4, ISSN 0809-103X.
+
+   ** Download: https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/236410 **
+
+ NOTE: The comments present in all the source codes of this software are also most
+ valuable as documentation. When referring to sections or equations, it is meant in
+ the above Ph.D.-thesis
+
+ Journal articles where vvpf 2.0 has been applied (for example):
+ [1] Jon Elvar Wallevik, Rheological properties of cement paste: thixotropic
+ behavior and structural breakdown, Cement and Concrete Research, 39 (2009) 14-29.
+ [2] Jon Elvar Wallevik, Particle Flow Interaction Theory - Thixotropic Behavior
+ and Structural Breakdown, proceedings of 36th Conference on our World of Concrete
+ and Structures, 14-16 August 2011, Singapore, pp. 103, 2011 (ISBN 978-981-08-9528-0).
+
+ ---------------------------------------------------------------------------------
+
+ OTHER FILES AND FOLDERS:
+ [run_here]              => it is a good idea to run vvpf in a separate folder.
+ omega_input_EXAMPLE.dat => input file: angular velocity [rad/s] (is in [run_here]).
+ time_input_EXAMPLE.dat  => input file: time [seconds] (is in [run_here]).
+ clean.sh                => a simple cleaning file (with other utils).
+ copying.txt             => the GNU General Public License (GNU GPL).
+ makefile                => the makefile (for UNIX/GNU Linux users)
+ readme.txt              => this file.
+
+ ---------------------------------------------------------------------------------
